@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family: 'Rubik', sans-serif;
+        }
+        h1,h2,h3,h4,h5,h6,p,li{
+            color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="px-5 py-3 flex items-center justify-between shadow-mainShadow gap-5 xl:px-32">
+            <div class="flex items-center">
+                <img src="../images/logo.png" alt="LOGO" class="w-7" >
+                <h1 class="hidden">СЕВЕРЯНОЧКА</h1>
+            </div>
+            <div class="hidden md:flex gap-3 items-center justify-center bg-[#70C05B] px-3 py-3 text-white rounded">
+                <i class="fa-solid fa-bars"></i>
+                <h1 class="hidden xl:inline text-white">Каталог</h1>
+            </div>
+            <div class="border-2 flex items-center px-2 py-2.5 gap-2 w-10/12 justify-between rounded xl:w-5/12">
+                <input type="text" class="focus:outline-none w-10/12" placeholder="Найти товар"/>
+                <i class="fa-solid fa-search"></i>
+            </div>
+            <ul class="hidden md:flex items-center justify-between">
+                <li class="flex flex-col items-center justify-center">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="text-[13px]">Избранное</p>
+                </li>
+                <li class="flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-box"></i>
+                    <p class="text-[13px]">Заказы</p>
+                </li>
+                <li class="flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <p class="text-[13px]">Корзина</p>
+                </li>
+                <li class="flex flex-col items-center justify-center w-1/12">
+                    <img src="https://s3-alpha-sig.figma.com/img/73a7/2afa/3b3294ff7bb2f45d2d03ac0d0fee5e5f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RXm7qk2rtJnz~xB0fPgo282V~RJGyDSAadZINAtXcU6Q9JNUAdUvt~SR8M6cY8GFW4AwNAOYI2CHxkrJc53TpSEYm4FgcOipjN7bUJbdtOEM7nwS62gsYeaiLlRFnDXyZmuBkBuVbdvNuBD00lZi8Px-iAi2Rn65nD6l-Os~2l1f0tpJSMpgy4LdL1SUksP6ZHahUpiEXrH0CPqLs-tKlQFxO5vF7QfiJBmg~RfXqbjuzs0Ufn5hoAxUvniBlh6bDdM6SFBrezzh91YhGCJZ1subIvPtF4F8-3i6atdlQaijcgsq2vgpk9bStpDVYwh3cQ7kp3vJEnunjXjipwgwGQ__" alt="" class="rounded-full">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="news bg-[url('../images/news-page-bg.png')] w-full h-28 flex items-center justify-center">
+            <h1 class="text-xl font-semibold">Доставка бесплатно от 1000 ₽</h1>
+        </section>
+        <section class="bg-[#FBF8EC] py-10 px-3 flex flex-col gap-5 xl:px-32">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-extrabold">Акции</h1>
+                <a href="#" class="flex items-center gap-4 opacity-50"><span class="font-medium">Все акции</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid grid-cols-2 gap-5 md:grid-cols-3 xl:grid-cols-4">
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <h1 class="absolute left-1.5 bottom-1.5 bg-mainColor px-3 py-1.5 text-white rounded">-50%</h1>
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center flex-col">
+                            <div class="flex items-center justify-between w-full">
+                                <h1 class="text-[13px]"><b>44,50 ₽</b></h1>
+                                <h3 class="text-[13px] opacity-80">50,50 ₽</h3>
+                            </div>
+                            <div class="flex items-center justify-between w-full">
+                                <span class="text-[10px] opacity-50">С картой</span>
+                                <span class="text-[10px] opacity-50">Обычная</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow md:hidden xl:inline">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <h1 class="absolute left-1.5 bottom-1.5 bg-mainColor px-3 py-1.5 text-white rounded">-50%</h1>
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center flex-col">
+                            <div class="flex items-center justify-between w-full">
+                                <h1 class="text-[13px]"><b>44,50 ₽</b></h1>
+                                <h3 class="text-[13px] opacity-80">50,50 ₽</h3>
+                            </div>
+                            <div class="flex items-center justify-between w-full">
+                                <span class="text-[10px] opacity-50">С картой</span>
+                                <span class="text-[10px] opacity-50">Обычная</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <h1 class="absolute left-1.5 bottom-1.5 bg-mainColor px-3 py-1.5 text-white rounded">-50%</h1>
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center flex-col">
+                            <div class="flex items-center justify-between w-full">
+                                <h1 class="text-[13px]"><b>44,50 ₽</b></h1>
+                                <h3 class="text-[13px] opacity-80">50,50 ₽</h3>
+                            </div>
+                            <div class="flex items-center justify-between w-full">
+                                <span class="text-[10px] opacity-50">С картой</span>
+                                <span class="text-[10px] opacity-50">Обычная</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <h1 class="absolute left-1.5 bottom-1.5 bg-mainColor px-3 py-1.5 text-white rounded">-50%</h1>
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center flex-col">
+                            <div class="flex items-center justify-between w-full">
+                                <h1 class="text-[13px]"><b>44,50 ₽</b></h1>
+                                <h3 class="text-[13px] opacity-80">50,50 ₽</h3>
+                            </div>
+                            <div class="flex items-center justify-between w-full">
+                                <span class="text-[10px] opacity-50">С картой</span>
+                                <span class="text-[10px] opacity-50">Обычная</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#FBF8EC] py-10 px-3 flex flex-col gap-5 xl:px-32">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-extrabold">Новинки</h1>
+                <a href="#" class="flex items-center gap-4 opacity-50"><span class="font-medium">Все новинки</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid grid-cols-2 gap-5 md:grid-cols-3 xl:grid-cols-4">
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow md:hidden xl:inline">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center">
+                            <h1><b>44,50 ₽</b></h1>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center">
+                            <h1><b>44,50 ₽</b></h1>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center">
+                            <h1><b>44,50 ₽</b></h1>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center">
+                            <h1><b>44,50 ₽</b></h1>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#FBF8EC] py-10 px-3 flex flex-col gap-5 xl:px-32">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-extrabold">Покупали раньше</h1>
+                <a href="#" class="flex items-center gap-4 opacity-50"><span class="font-medium">Все покупки</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid grid-cols-2 gap-5 md:grid-cols-3 xl:grid-cols-4">
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow md:hidden xl:inline">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center">
+                            <h1><b>44,50 ₽</b></h1>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center">
+                            <h1><b>44,50 ₽</b></h1>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center">
+                            <h1><b>44,50 ₽</b></h1>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded py-4 duration-300 hover:shadow-mainShadow">
+                    <div class="flex items-end relative">
+                        <img src="../images/product-imgs/product.png">
+                        <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-3 py-3 flex flex-col gap-3">
+                        <div class="flex items-center">
+                            <h1><b>44,50 ₽</b></h1>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="line-clamp-3 text-[13px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное</p>
+                            <div class="text-[10px]">
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                                <i class="fa-solid fa-star text-mainColor"></i>
+                            </div>
+                        </div>
+                        <button class="border-2 border-mainColor py-2 rounded hover:bg-mainColor hover:text-white">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#FBF8EC] py-10 px-3 flex flex-col gap-5 xl:px-32">
+            <h1 class="text-2xl"><b>Специальные предложения</b></h1>
+            <div class="flex flex-col gap-5 md:flex-row">
+                <div class="flex items-center bg-[#CA936080] px-5 py-3 overflow-hidden rounded shadow-mainShadow">
+                    <div>
+                        <h1 class="text-2xl"><b>Оформите карту «Северяночка»</b></h1>
+                        <p>И получайте бонусы при покупке в магазинах и на сайте</p>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/0a38/e4b6/27c828e2d747a73618eb8e3b5ec2a80e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j5I3mTvVobTxCVXnAiqdTSRGa6ygNtvfLoFsDSALjxlBoMFd6wwcJM4IDNnKV4uHtEfof1So7oOpceWfGDFKEymOcfKtZTFQ~xarAgJ4RBNNdMZ6oDiQAqV8ZY066aJWelk~0ow3PHpJNOFXXKP2cNlVlx39v-qhVzmHZ0Bs3hvZo-a-0ts4q5rIL6U9Y~yWDmCv6v~WVpbJDIW5~BZcbFgvAjuGImbNgc8-n5oVGaY-0BDYzFL3V~0LCx-tQpCZkbOduRVeV8ofVSFIvJ6MNE2UJJ5n-eQkjzyAzR-aXKRo3f4EMcTR7pxqNJh79I~AZSSyDPfxWRnD7wolB3GuvQ__" alt="" class="rotate-12 w-4/12 relative left-14">
+                </div>
+                <div class="flex items-center justify-between bg-[#E5FFDE] px-5 py-3 rounded">
+                    <div class="w-6/12">
+                        <h1 class="text-xl"><b>Покупайте акционные товары</b></h1>
+                        <p>И получайте вдвое больше бонусов</p>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/0f47/edce/4fab8faa550474bc0fdd4f67d53093fb?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I9oGi9GwOGavadykHK6dJsrTF3Lzu3TjtwJ2kvrq1zCAvEirszraXDNCV87Z2u3XwdirEL-euLCXmX7h6omFRSstpOIgVqlYmYfPKGpZZf2x4B1fGSrMhkB7~WaK2iU0kjpsw2VfuUecc~nOd6O0kzEemIFhMpPyDYxp6FtYT3~5NkFU5K-HpbI~maHWj5UNaLOSi~kqyH1ColUT7vyTx6KhJwx0Wn8oXFQbJB5F9BDueBU~TmuPDbUuwKfkL3R31NZ4NGMslHvy1YOMW1eszHpn3d778gsyf5YomtHcJx~BQwqmiiFwB5GyLuIJflJr-xYOBVwZN0Y4-u4rJGDDYA__" alt="" class="w-5/12">
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#FBF8EC] py-10 px-3 flex flex-col gap-5 xl:px-32">
+            <h1 class="text-2xl"><b>Наши магазины</b></h1>
+            <div class="flex gap-3 flex-wrap">
+                <button class="px-3 py-3 bg-[#70C05B] text-white rounded">п.Щельяюр</button>
+                <button class="px-3 py-3 bg-[#F3F2F1] rounded">д.Вертеп</button>
+                <button class="px-3 py-3 bg-[#F3F2F1] rounded">с.Краснобор</button>
+                <button class="px-3 py-3 bg-[#F3F2F1] rounded">д.Диюр</button>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1914361.4211159386!2d62.458199441061616!3d42.05887142988992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1730018277556!5m2!1sru!2s" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="bg-[#FBF8EC] py-10 px-3 flex flex-col gap-5 xl:px-32">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-extrabold">Статьи</h1>
+                <a href="#" class="flex items-center gap-4 opacity-50"><span class="font-medium">Все статьи</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-3 xl:grid-cols-4">
+                <div class="bg-white rounded md:hidden xl:inline">
+                    <img src="https://s3-alpha-sig.figma.com/img/d0c5/3cbc/487d1fda9bd5ef3ea4e3cdf98866a0b3?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SIc-lJo-C6Anal5MMtZrijdcnNS4KR2iM2dJG5Xy5KVUZ1hoDvrarqPf0-E3v~TMYTJFdFxI3gzKWcin~hkvGJhdqpym9ULXwIxQU-LO97H5Kb5q7SVROuFz1d0QxsGoVvd-WPVeorrIV5ZotlaYtisLbu4soQ0rR0d2G9iIceJIIiPFQZV6gI7dlCNsAXuSjbfa6Ga6wfkM49nK9vHMeCQtvsdfYZmY~mGSIycbDZ6ZX4jw27VuQ0lo6mFE5zZAbKpZuXz~JlAybzywHwfbJ7Zib7~NNN5BflOYZkpTiD6vtOjDcO4NXhdYN~qw0BTDDFZVs6Jn3c~pIDgxKiqEvA__" alt="blog-img" class="h-28 w-full object-cover rounded-t">
+                    <div class="flex flex-col gap-3 p-3">
+                        <span class="text-[10px] opacity-60">05.03.2021</span>
+                        <h1 class="text-xl"><b>Режим использования масок и перчаток на территории магазинов</b></h1>
+                        <p>Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <button class="bg-[#70C05B] text-white px-3 py-2 w-40 rounded">Подробнее</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded">
+                    <img src="https://s3-alpha-sig.figma.com/img/d0c5/3cbc/487d1fda9bd5ef3ea4e3cdf98866a0b3?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SIc-lJo-C6Anal5MMtZrijdcnNS4KR2iM2dJG5Xy5KVUZ1hoDvrarqPf0-E3v~TMYTJFdFxI3gzKWcin~hkvGJhdqpym9ULXwIxQU-LO97H5Kb5q7SVROuFz1d0QxsGoVvd-WPVeorrIV5ZotlaYtisLbu4soQ0rR0d2G9iIceJIIiPFQZV6gI7dlCNsAXuSjbfa6Ga6wfkM49nK9vHMeCQtvsdfYZmY~mGSIycbDZ6ZX4jw27VuQ0lo6mFE5zZAbKpZuXz~JlAybzywHwfbJ7Zib7~NNN5BflOYZkpTiD6vtOjDcO4NXhdYN~qw0BTDDFZVs6Jn3c~pIDgxKiqEvA__" alt="blog-img" class="h-28 w-full object-cover rounded-t">
+                    <div class="flex flex-col gap-3 p-3">
+                        <span class="text-[10px] opacity-60">05.03.2021</span>
+                        <h1 class="text-xl"><b>Режим использования масок и перчаток на территории магазинов</b></h1>
+                        <p>Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <button class="bg-[#E5FFDE] text-green-600 px-3 py-2 w-40 rounded">Подробнее</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded">
+                    <img src="https://s3-alpha-sig.figma.com/img/d0c5/3cbc/487d1fda9bd5ef3ea4e3cdf98866a0b3?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SIc-lJo-C6Anal5MMtZrijdcnNS4KR2iM2dJG5Xy5KVUZ1hoDvrarqPf0-E3v~TMYTJFdFxI3gzKWcin~hkvGJhdqpym9ULXwIxQU-LO97H5Kb5q7SVROuFz1d0QxsGoVvd-WPVeorrIV5ZotlaYtisLbu4soQ0rR0d2G9iIceJIIiPFQZV6gI7dlCNsAXuSjbfa6Ga6wfkM49nK9vHMeCQtvsdfYZmY~mGSIycbDZ6ZX4jw27VuQ0lo6mFE5zZAbKpZuXz~JlAybzywHwfbJ7Zib7~NNN5BflOYZkpTiD6vtOjDcO4NXhdYN~qw0BTDDFZVs6Jn3c~pIDgxKiqEvA__" alt="blog-img" class="h-28 w-full object-cover rounded-t">
+                    <div class="flex flex-col gap-3 p-3">
+                        <span class="text-[10px] opacity-60">05.03.2021</span>
+                        <h1 class="text-xl"><b>Режим использования масок и перчаток на территории магазинов</b></h1>
+                        <p>Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <button class="bg-[#70C05B] text-white px-3 py-2 w-40 rounded">Подробнее</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded">
+                    <img src="https://s3-alpha-sig.figma.com/img/d0c5/3cbc/487d1fda9bd5ef3ea4e3cdf98866a0b3?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SIc-lJo-C6Anal5MMtZrijdcnNS4KR2iM2dJG5Xy5KVUZ1hoDvrarqPf0-E3v~TMYTJFdFxI3gzKWcin~hkvGJhdqpym9ULXwIxQU-LO97H5Kb5q7SVROuFz1d0QxsGoVvd-WPVeorrIV5ZotlaYtisLbu4soQ0rR0d2G9iIceJIIiPFQZV6gI7dlCNsAXuSjbfa6Ga6wfkM49nK9vHMeCQtvsdfYZmY~mGSIycbDZ6ZX4jw27VuQ0lo6mFE5zZAbKpZuXz~JlAybzywHwfbJ7Zib7~NNN5BflOYZkpTiD6vtOjDcO4NXhdYN~qw0BTDDFZVs6Jn3c~pIDgxKiqEvA__" alt="blog-img" class="h-28 w-full object-cover rounded-t">
+                    <div class="flex flex-col gap-3 p-3">
+                        <span class="text-[10px] opacity-60">05.03.2021</span>
+                        <h1 class="text-xl"><b>Режим использования масок и перчаток на территории магазинов</b></h1>
+                        <p>Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <button class="bg-[#70C05B] text-white px-3 py-2 w-40 rounded">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[url('../images/news-page-bg.png')] bg-[#FBF8EC] py-10 px-3 flex flex-wrap justify-between gap-3 pb-36 md:pb-10 xl:px-32">
+        <div class="flex flex-col items-center">
+            <img src="../images/logo.png" alt="logo">
+            <h1><b>СЕВЕРЯНОЧКА</b></h1>
+        </div>
+        <div class="flex flex-col gap-5 xl:flex-row items-center justify-center">
+            <div class="flex items-center justify-between gap-3 xl:gap-3">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-odnoklassniki"></i>
+                <i class="fa-brands fa-vk"></i>
+            </div>
+            <div>
+                <a href="tel: +998999999999"><i class="fa-solid fa-phone"></i>+998 99 999 99 99</a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-3">
+            <ul class="flex gap-3 text-[15px]">
+                <li>
+                    <a href="">О компании</a>
+                </li>
+                <li>
+                    <a href="">Контакты</a>
+                </li>
+                <li>
+                    <a href="">Статьи</a>
+                </li>
+                <li>
+                    <a href="">Вакансии</a>
+                </li>
+            </ul>
+            <a href="" class="text-[#414141]">Политика обработки персональных данных</a>
+        </div>
+    </footer>
+    <div class="w-full bg-white fixed z-50 bottom-0 shadow-mainShadow md:hidden">
+        <ul class="flex items-center justify-between px-3 py-5 gap-3">
+            <li class="flex flex-col items-center justify-center">
+                <i class="fa-solid fa-bars"></i>
+                <p class="text-[13px]">Каталог</p>
+            </li>
+            <li class="flex flex-col items-center justify-center">
+                <i class="fa-regular fa-heart"></i>
+                <p class="text-[13px]">Избранное</p>
+            </li>
+            <li class="flex flex-col items-center justify-center">
+                <i class="fa-solid fa-box"></i>
+                <p class="text-[13px]">Заказы</p>
+            </li>
+            <li class="flex flex-col items-center justify-center">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <p class="text-[13px]">Корзина</p>
+            </li>
+            <li class="flex flex-col items-center justify-center w-1/12">
+                <img src="https://s3-alpha-sig.figma.com/img/73a7/2afa/3b3294ff7bb2f45d2d03ac0d0fee5e5f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RXm7qk2rtJnz~xB0fPgo282V~RJGyDSAadZINAtXcU6Q9JNUAdUvt~SR8M6cY8GFW4AwNAOYI2CHxkrJc53TpSEYm4FgcOipjN7bUJbdtOEM7nwS62gsYeaiLlRFnDXyZmuBkBuVbdvNuBD00lZi8Px-iAi2Rn65nD6l-Os~2l1f0tpJSMpgy4LdL1SUksP6ZHahUpiEXrH0CPqLs-tKlQFxO5vF7QfiJBmg~RfXqbjuzs0Ufn5hoAxUvniBlh6bDdM6SFBrezzh91YhGCJZ1subIvPtF4F8-3i6atdlQaijcgsq2vgpk9bStpDVYwh3cQ7kp3vJEnunjXjipwgwGQ__" alt="" class="rounded-full">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
