@@ -27,10 +27,10 @@
                 <img src="images/logo.png" alt="LOGO" class="w-7" >
                 <h1 class="hidden">СЕВЕРЯНОЧКА</h1>
             </div>
-            <div class="hidden md:flex gap-3 items-center justify-center bg-[#70C05B] px-3 py-3 text-white rounded">
+            <button id="category-btn" onclick="showCategories()" class="hidden md:flex gap-3 items-center justify-center bg-[#70C05B] px-3 py-3 text-white rounded">
                 <i class="fa-solid fa-bars"></i>
                 <h1 class="hidden xl:inline text-white">Каталог</h1>
-            </div>
+            </button>
             <div class="border-2 flex items-center px-2 py-2.5 gap-2 w-10/12 justify-between rounded xl:w-5/12">
                 <input type="text" class="focus:outline-none w-10/12" placeholder="Найти товар"/>
                 <i class="fa-solid fa-search"></i>
@@ -54,6 +54,7 @@
             </ul>
         </nav>
     </header>
+    <div id="categories" class="hidden grid grid-cols-1 gap-5 mt-0 px-5 absolute bg-white z-10 w-full"></div>
     <main>
         <section class="bg-[url('../images/news-page-bg.png')] w-full h-28 flex items-center justify-center">
             <h1 class="text-xl font-semibold">Доставка бесплатно от 1000 ₽</h1>
@@ -537,8 +538,10 @@
     <div class="w-full bg-white fixed z-50 bottom-0 shadow-mainShadow md:hidden">
         <ul class="flex items-center justify-between px-3 py-5 gap-3">
             <li class="flex flex-col items-center justify-center">
-                <i class="fa-solid fa-bars"></i>
-                <p class="text-[13px]">Каталог</p>
+                <button id="category-btn-phone">
+                    <i class="fa-solid fa-bars"></i>
+                    <p class="text-[13px]">Каталог</p>
+                </button>
             </li>
             <li class="flex flex-col items-center justify-center">
                 <i class="fa-regular fa-heart"></i>
@@ -557,5 +560,7 @@
             </li>
         </ul>
     </div>
+
+    <script type="module" src="./js/home.js"></script>
 </body>
 </html>
