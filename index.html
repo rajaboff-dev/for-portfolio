@@ -27,7 +27,7 @@
                 <img src="images/logo.png" alt="LOGO" class="w-7" >
                 <h1 class="hidden">СЕВЕРЯНОЧКА</h1>
             </div>
-            <button id="category-btn" onclick="showCategories()" class="hidden md:flex gap-3 items-center justify-center bg-[#70C05B] px-3 py-3 text-white rounded">
+            <button id="category-btn" class="hidden md:flex gap-3 items-center justify-center bg-[#70C05B] px-3 py-3 text-white rounded">
                 <i class="fa-solid fa-bars"></i>
                 <h1 class="hidden xl:inline text-white">Каталог</h1>
             </button>
@@ -54,7 +54,7 @@
             </ul>
         </nav>
     </header>
-    <div id="categories" class="hidden grid grid-cols-1 gap-5 mt-0 px-5 absolute bg-white z-10 w-full"></div>
+    <div id="categories" class="hidden grid grid-cols-1 gap-5 mt-0 px-5 py-10 absolute bg-white z-10 w-full md:grid-cols-2 xl:grid-cols-3"></div>
     <main>
         <section class="bg-[url('../images/news-page-bg.png')] w-full h-28 flex items-center justify-center">
             <h1 class="text-xl font-semibold">Доставка бесплатно от 1000 ₽</h1>
@@ -446,13 +446,13 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[#FBF8EC] py-10 px-3 flex flex-col gap-5 xl:px-32">
+        <section class="our-magazines bg-[#FBF8EC] py-10 px-3 flex flex-col gap-5 xl:px-32">
             <h1 class="text-2xl"><b>Наши магазины</b></h1>
-            <div class="flex gap-3 flex-wrap">
-                <button class="px-3 py-3 bg-[#70C05B] text-white rounded">п.Щельяюр</button>
-                <button class="px-3 py-3 bg-[#F3F2F1] rounded">д.Вертеп</button>
-                <button class="px-3 py-3 bg-[#F3F2F1] rounded">с.Краснобор</button>
-                <button class="px-3 py-3 bg-[#F3F2F1] rounded">д.Диюр</button>
+            <div class="flex gap-3 flex-wrap magazines">
+                <button class="px-3 py-3 bg-[#70C05B] text-white rounded" data-map="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2798.8162388932747!2d63.98848454412113!3d46.358857057706764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1730255533486!5m2!1sru!2s">п.Щельяюр</button>
+                <button class="px-3 py-3 bg-[#F3F2F1] rounded" data-map="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23516171.260699652!2d40.19488227423171!3d41.85043790357657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1730256344225!5m2!1sru!2s">д.Вертеп</button>
+                <button class="px-3 py-3 bg-[#F3F2F1] rounded" data-map="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48790481.211538!2d29.441871721545592!3d43.155314917398485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1730256451982!5m2!1sru!2s">с.Краснобор</button>
+                <button class="px-3 py-3 bg-[#F3F2F1] rounded" data-map="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d51553389.69210871!2d28.864871552576084!3d42.61884481547285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1730256479067!5m2!1sru!2s">д.Диюр</button>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1914361.4211159386!2d62.458199441061616!3d42.05887142988992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1730018277556!5m2!1sru!2s" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
@@ -562,5 +562,6 @@
     </div>
 
     <script type="module" src="./js/home.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
