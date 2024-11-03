@@ -20,7 +20,28 @@
         }
     </style>
 </head>
-<body>
+<body class="max-w-[1600px] m-auto">
+    <div id="signup-modal" class="modal-active fixed w-full h-full bg-[#FCD5BACC] z-50 flex items-center justify-center">
+        <div class="popup bg-white">
+            <div class="flex items-center justify-end w-full">
+                <i class="fa-solid fa-close signup-modal-closer bg-slate-200 py-2 px-2.5 hover:bg-red-500 hover:text-white" title="Close"></i>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-3 px-16 py-10">
+                <h2><b>Вход</b></h2>
+                <form action="" class="flex flex-col items-center justify-center gap-4">
+                    <div class="flex flex-col items-start gap-1">
+                        <label for="phone-num-input" class="text-xs text-slate-400">Телефон</label>
+                        <input type="text" id="phone-num-input" class="py-2 px-3 border-2 border-green-500 rounded shadow-mainShadow" placeholder="Type your number">
+                    </div>
+                    <button class="bg-[#fcd5ba] text-mainColor w-full rounded py-2">Вход</button>
+                    <div class="flex items-center justify-between w-full">
+                        <button class="text-xs border-2 border-green-400 text-green-400 py-2 rounded px-3 hover:bg-green-400 hover:text-white">Регистрация</button>
+                        <a href="#" class="text-xs">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <nav class="px-5 py-3 flex items-center justify-between shadow-mainShadow gap-5 xl:px-32">
             <div class="flex items-center">
@@ -70,9 +91,7 @@
                         <img src="images/product-imgs/product.png">
                         <h1 class="absolute left-1.5 bottom-1.5 bg-mainColor px-3 py-1.5 text-white rounded">-50%</h1>
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -104,9 +123,7 @@
                         <img src="images/product-imgs/product.png">
                         <h1 class="absolute left-1.5 bottom-1.5 bg-mainColor px-3 py-1.5 text-white rounded">-50%</h1>
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -138,9 +155,7 @@
                         <img src="images/product-imgs/product.png">
                         <h1 class="absolute left-1.5 bottom-1.5 bg-mainColor px-3 py-1.5 text-white rounded">-50%</h1>
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -172,9 +187,7 @@
                         <img src="images/product-imgs/product.png">
                         <h1 class="absolute left-1.5 bottom-1.5 bg-mainColor px-3 py-1.5 text-white rounded">-50%</h1>
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -213,9 +226,7 @@
                     <div class="flex items-end relative">
                         <img src="images/product-imgs/product.png">
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -239,9 +250,7 @@
                     <div class="flex items-end relative">
                         <img src="images/product-imgs/product.png">
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -265,9 +274,7 @@
                     <div class="flex items-end relative">
                         <img src="images/product-imgs/product.png">
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -291,9 +298,7 @@
                     <div class="flex items-end relative">
                         <img src="images/product-imgs/product.png">
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -325,9 +330,7 @@
                     <div class="flex items-end relative">
                         <img src="images/product-imgs/product.png">
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -351,9 +354,7 @@
                     <div class="flex items-end relative">
                         <img src="images/product-imgs/product.png">
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -377,9 +378,7 @@
                     <div class="flex items-end relative">
                         <img src="images/product-imgs/product.png">
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
@@ -403,9 +402,7 @@
                     <div class="flex items-end relative">
                         <img src="images/product-imgs/product.png">
                         <div class="absolute right-3 top-0 bg-blue-100 px-1 rounded">
-                            <button>
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
+                            <i class="fa-regular fa-heart like-product"></i>
                         </div>
                     </div>
                     <div class="px-3 py-3 flex flex-col gap-3">
